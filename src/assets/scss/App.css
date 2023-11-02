@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  color: #191919;
-  z-index: 1000;
-}
-
 .btn-yellow {
   background-color: #F9D783;
   border: 1px solid #F9D783;
@@ -1707,4 +1699,18 @@ header .container .menu .btn-login {
   padding-top: 70px;
   width: 100%;
   height: 700px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #ffffff;
+  z-index: 1000;
+  border: none;
+  font-size: 35px;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #424242;
 }
