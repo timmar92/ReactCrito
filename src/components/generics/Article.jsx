@@ -32,7 +32,7 @@ const Article = ({ limit }) => {
                 const publishedDate = date.toLocaleDateString('sv-SE');
 
                 return (
-                    <Link key={article.id} className="article" href="#">
+                    <Link key={article.id} className="article" to={`/newsdetails/${article.id}`}>
                         <div className="picture">
                             <img className="article-image" src={article.imageUrl} alt="article" />
                             <p className='date'>Published: {publishedDate}</p>

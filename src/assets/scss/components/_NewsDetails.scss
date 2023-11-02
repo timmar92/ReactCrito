@@ -1,0 +1,122 @@
+.expanded-article {
+    margin-top: 100px;
+    .container {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: auto auto 30%;
+        grid-template-areas:    "article article searchbox";
+        gap : 100px;
+
+        .article {
+            grid-area: article;
+            max-width: 100%;
+
+            .title {
+                font-size: 40px;
+            }
+
+            .article-img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .info {
+                display: flex;
+                gap: 20px;
+    
+                .published {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                .author {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                .category {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                .yellow-dot {
+                    color: #F2C94C;
+                    font-size: 14px;
+                }
+            }
+
+            .content{
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 40px;
+                gap: 20px;
+                
+                .first{
+                    margin-bottom: 40px;
+                    
+                }
+                .second {
+                    margin-bottom: 40px;
+                }
+                .third {
+                    margin-bottom: 40px;
+                }
+                .fourth {
+                    margin-bottom: 70px;
+                }
+            }
+
+            .quote {
+                position: relative;
+                display: flex;
+                gap: 30px;
+
+
+                .icon {
+                    position: relative;
+                    top: -20px;
+                    font-size: 40px;
+                    ;
+                    
+                }
+
+                p {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22;
+                    font-style: italic;
+                    font-weight: 500;
+                }
+
+            }
+
+            .last {
+                margin-top: 50px;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .tag-row {
+                display: flex;
+                gap: 10px;
+                margin-top: 50px;
+            }
+
+
+        }
+
+        .recent-posts {
+            grid-area: searchbox;
+
+        }
+    }
+}
+
+.different-background-color {
+    background-color: #F0EFE9;
+    margin-top: 80px;
+}

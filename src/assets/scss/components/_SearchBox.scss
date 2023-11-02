@@ -1,0 +1,117 @@
+.searchbox {
+
+    .input-area {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F3F3F3;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        margin-top: 100px;
+
+
+
+        input {
+            width: 70%;
+            border: none;
+            background-color: #F3F3F3;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        i {
+            position: absolute;
+            left: 30px;
+        }
+    }
+
+    .card-1 {
+        border : 1px solid #dad9d3ff;
+        margin-top: 30px;
+        padding: 35px;
+
+        .border-between {
+            border : 1px solid #dad9d3ff;
+            margin-bottom: 15px;
+        }
+
+        .post {
+            text-decoration: none;
+            color: #191919;
+
+            &:hover {
+                text-decoration: underline;
+                
+            }
+
+            h4 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            p {
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 10px;
+            }
+        }
+
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            
+        }
+        
+        .underline {
+            border: 1px solid #191919;
+            width: 50px;
+            margin-top: -12px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .card-2 {
+        border : 1px solid #dad9d3ff;
+        margin-top: 30px;
+        padding: 35px;
+
+
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 22;
+            font-weight: 700;;
+        }
+
+        .category {
+            display: flex;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            color: #191919;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            span {
+                color: rgb(183, 183, 183)
+            }
+        }
+        
+        .underline {
+            border: 1px solid #191919;
+            width: 50px;
+            margin-top: -12px;
+            margin-bottom: 30px;
+        }
+    }
+}
+

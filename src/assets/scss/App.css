@@ -1714,3 +1714,208 @@ header .container .menu .btn-login {
   border-radius: 35px;
   background-color: #424242;
 }
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #F3F3F3;
+  width: 120px;
+  padding-top: 12px;
+  border-radius: 25px;
+}
+
+.expanded-article {
+  margin-top: 100px;
+}
+.expanded-article .container {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto 30%;
+  grid-template-areas: "article article searchbox";
+  gap: 100px;
+}
+.expanded-article .container .article {
+  grid-area: article;
+  max-width: 100%;
+}
+.expanded-article .container .article .title {
+  font-size: 40px;
+}
+.expanded-article .container .article .article-img {
+  max-width: 100%;
+  height: auto;
+}
+.expanded-article .container .article .info {
+  display: flex;
+  gap: 20px;
+}
+.expanded-article .container .article .info .published {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.expanded-article .container .article .info .author {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.expanded-article .container .article .info .category {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.expanded-article .container .article .info .yellow-dot {
+  color: #F2C94C;
+  font-size: 14px;
+}
+.expanded-article .container .article .content {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 40px;
+  gap: 20px;
+}
+.expanded-article .container .article .content .first {
+  margin-bottom: 40px;
+}
+.expanded-article .container .article .content .second {
+  margin-bottom: 40px;
+}
+.expanded-article .container .article .content .third {
+  margin-bottom: 40px;
+}
+.expanded-article .container .article .content .fourth {
+  margin-bottom: 70px;
+}
+.expanded-article .container .article .quote {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+.expanded-article .container .article .quote .icon {
+  position: relative;
+  top: -20px;
+  font-size: 40px;
+}
+.expanded-article .container .article .quote p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22;
+  font-style: italic;
+  font-weight: 500;
+}
+.expanded-article .container .article .last {
+  margin-top: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.expanded-article .container .article .tag-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+.expanded-article .container .recent-posts {
+  grid-area: searchbox;
+}
+
+.different-background-color {
+  background-color: #F0EFE9;
+  margin-top: 80px;
+}
+
+.searchbox .input-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  margin-top: 100px;
+}
+.searchbox .input-area input {
+  width: 70%;
+  border: none;
+  background-color: #F3F3F3;
+}
+.searchbox .input-area input:focus {
+  outline: none;
+}
+.searchbox .input-area i {
+  position: absolute;
+  left: 30px;
+}
+.searchbox .card-1 {
+  border: 1px solid #dad9d3;
+  margin-top: 30px;
+  padding: 35px;
+}
+.searchbox .card-1 .border-between {
+  border: 1px solid #dad9d3;
+  margin-bottom: 15px;
+}
+.searchbox .card-1 .post {
+  text-decoration: none;
+  color: #191919;
+}
+.searchbox .card-1 .post:hover {
+  text-decoration: underline;
+}
+.searchbox .card-1 .post h4 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.searchbox .card-1 .post p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.searchbox .card-1 h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.searchbox .card-1 .underline {
+  border: 1px solid #191919;
+  width: 50px;
+  margin-top: -12px;
+  margin-bottom: 30px;
+}
+.searchbox .card-2 {
+  border: 1px solid #dad9d3;
+  margin-top: 30px;
+  padding: 35px;
+}
+.searchbox .card-2 h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22;
+  font-weight: 700;
+}
+.searchbox .card-2 .category {
+  display: flex;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #191919;
+}
+.searchbox .card-2 .category:hover {
+  text-decoration: underline;
+}
+.searchbox .card-2 .category span {
+  color: rgb(183, 183, 183);
+}
+.searchbox .card-2 .underline {
+  border: 1px solid #191919;
+  width: 50px;
+  margin-top: -12px;
+  margin-bottom: 30px;
+}
