@@ -1,0 +1,105 @@
+.choose-us-section {
+    position: relative;
+
+    .grey-card {
+        z-index: 0;
+
+        @media (min-width: 1200px) {
+            position: absolute;
+            background-color: #F0EFE9;
+            width: 60%;
+            height: 400px;
+            bottom: 0px;
+            right: 0;
+        }
+
+        
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -70px;
+        
+
+        @media (min-width: 1200px) {
+            position: relative;
+            display: grid;
+            grid-template-columns: 40% 55%;
+            margin-bottom: 30px;
+        }
+
+        
+        
+        .information-column {
+            z-index: 1;
+            background-color: #FFFFFF;
+
+            .section-title {
+                text-align: center;
+                
+                @media (min-width: 1200px) {
+                    text-align: start;
+                }
+            }
+
+            .information-highlight {
+
+                .info-card {
+                    text-align: center;
+                    margin-bottom: 50px;
+
+                    @media (min-width: 1200px) {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        text-align: start;
+                    }
+                    
+
+                    img {
+                        margin-top: -35px;
+                        margin-right: 20px;
+                        height: auto;
+                        width: 10%;
+                    }
+
+                }
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #707070;
+                }
+            }
+
+        }
+
+        .two-people {
+            display: none;
+
+            @media (min-width: 1200px) {
+                display: block;
+                position: absolute;
+                bottom: 100px;
+                right: 0px;
+            }
+            
+
+        }
+
+    }
+
+    
+
+}

@@ -1,0 +1,115 @@
+footer {
+    background-color: #0E1021;
+
+    .link-section {
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto 15% 15% 15% 15%;
+            padding-top: 70px;
+            
+    
+            .logotype {
+                display: grid;
+                grid-template-columns: auto;
+                row-gap: 30px;
+                margin-right: 7.5vw;
+    
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #707070;
+                }
+            }
+    
+            .link-columns {
+                display: flex;
+                flex-direction: column;
+    
+                h3 {
+                    color: #FFFFFF;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+    
+                a {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #707070;
+                    text-decoration: none;
+                    line-height: 2.5em;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+
+
+            }
+        }
+
+        .wavy-lines-footer {
+            position: relative;
+        
+            display: -webkit-box;
+            margin-left: auto;
+        }
+    }
+
+    .footer-section {
+        border-top: 1px solid #707070;
+        
+        .page-bottom {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                @media (min-width: 1200px) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 0px;
+                }
+
+                .copyright {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #707070;
+
+                    @media (min-width: 1200px) {
+                        font-size: 16px;
+                    }
+                }
+
+                .social-media {
+
+                    a {
+                        color: #FFFFFF;
+                        font-size: 1.3rem;
+                        margin-left: 20px;
+        
+                        &:hover {
+                            color: #a8a8a8;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

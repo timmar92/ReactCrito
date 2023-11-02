@@ -1,0 +1,188 @@
+.features {
+
+    .container {
+        text-align: center;
+
+        @media (min-width: 1200px) {
+            text-align: start;
+            display: grid;
+            grid-template-columns: auto auto;
+            border: 1px solid #dad9d3ff;
+            margin-top: 80px;
+        }
+
+        .section-title {
+
+            display: grid;
+            align-items: center;
+            margin-left: 90px;
+            margin-right: 95px;
+
+            h2 {
+                font-size: 35px;
+                margin-top: 10px;
+                margin-bottom: -10px;
+
+                @media (min-width: 1200px) {
+                    font-size: 45px;
+                }
+            }
+            
+            .btn-yellow {
+                margin-top: 50px;
+                margin-bottom: 200px;
+                text-align: center;
+            }
+
+        }
+
+        .feature-grid {
+            display: none;
+
+            @media (min-width: 1200px) {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 100px;
+            margin-top: 100px;
+            margin-right: 50px;
+            }
+
+            .advice {
+               
+
+               .image {
+                position: relative;
+
+                .main-image {
+                    position: relative;
+                    top: 10px;
+                }
+                .star-1 {
+                    position: relative;
+                    top: -10px;
+                    left: -30px;
+                }
+                .star-2 {
+                    position: relative;
+                    top: -8px;
+                    left: -15px;
+                }
+                .star-3 {
+                    position: relative;
+                    top: 5px;
+                    left: -7px;
+                }
+
+               }
+               
+            }
+
+            .startup {
+
+                .image {
+                    position: relative;
+
+                    .main-image {
+                        position: relative;
+                        top: 10px;
+                    }
+                    .star-1 {
+                        position: relative;
+                        top: -15px;
+                        left: -30px;
+                    }
+                    .star-2 {
+                        position: relative;
+                        top: -8px;
+                        left: -16px;
+                    }
+                    .star-3 {
+                        position: relative;
+                        top: 5px;
+                        left: -12px;
+                    }
+    
+                   }
+                
+            }
+
+            .financial {
+ 
+                margin-top: -40px;
+
+                .image {
+                    position: relative;
+
+                    .main-image {
+                        position: relative;
+                        top: 10px;
+                    }
+                    .star-1 {
+                        position: relative;
+                        top: -10px;
+                        left: -27px;
+                    }
+                    .star-2 {
+                        position: relative;
+                        top: -8px;
+                        left: -19px;
+                    }
+                    .star-3 {
+                        position: relative;
+                        top: 5px;
+                        left: -11px;
+                    }
+    
+                   }
+            }
+
+            .management {
+
+                margin-top: -40px;
+
+                .image {
+                    position: relative;
+
+                    .main-image {
+                        position: relative;
+                        top: 10px;
+                    }
+                    .star-1 {
+                        position: relative;
+                        top: -13px;
+                        left: -30px;
+                    }
+                    .star-2 {
+                        position: relative;
+                        top: -8px;
+                        left: -20px;
+                    }
+                    .star-3 {
+                        position: relative;
+                        top: 5px;
+                        left: -14px;
+                    }
+    
+                   }
+                
+            }
+
+            h3 {
+                color: #191919;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+                margin-top: 30px;
+            }
+
+            p {
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                color: #707070;
+                
+            }
+
+        }
+    }
+}

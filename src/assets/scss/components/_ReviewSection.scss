@@ -1,0 +1,95 @@
+.review-section {
+    background-color: #F0D082;
+    padding-bottom: 100px;
+    
+
+    .container {
+        background-color: #FFFFFF;
+        padding-bottom: 100px;
+        
+
+
+        .section-title {
+            text-align: center;
+        }
+
+        .reviews {            
+            display: grid;
+            grid-template-rows: auto auto auto;
+            row-gap: 20px;
+
+
+            @media (min-width: 1200px) {
+                display: flex;
+                margin-left: 85px;
+                margin-right: 85px;
+                gap: 60px;
+            }
+
+            .card {
+                border-width: 2px;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                border-radius: 0%;
+
+                @media (min-width: 1200px) {
+                    border: none;
+                }
+
+                .score {
+
+
+
+                    p {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-style: italic;
+                        color: #707070;
+                        margin-top: 20px;
+                    }
+                }
+
+                .person {
+                    display: flex;
+                    margin-top: 20px;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media (min-width: 1200px) {
+                        justify-content: start;
+                    }
+
+                    img {
+                        height: 60px;
+                        width: 60px;
+                        margin-right: 20px;
+                    }
+
+                    .person-title {
+                        line-height: 60%;
+                        h3 {
+                            font-family: 'DM Sans', sans-serif;
+                            font-weight: 700;
+                            font-size: 22px;
+                        }
+
+                        p {
+                            font-family: 'Inter', sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            color: #F94D1C;
+                        }
+                    }
+                }
+            }
+        }
+        .center-content {
+            margin-top: 60px;
+            
+
+        }
+    }
+}

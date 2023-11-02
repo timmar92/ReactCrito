@@ -1,0 +1,111 @@
+.service-section {
+    background-color: #F0EFE9;
+    margin-top: 90px;
+    padding-bottom: 100px;
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .container {
+
+        .service-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+
+            @media (min-width: 1200px) {
+                margin-top: 15px;
+            }
+
+        }
+
+        
+        .section-title {
+            text-align: center;
+
+            @media (min-width: 1200px) {
+                text-align: start;
+            }
+        }
+
+        .service-boxes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+            position: relative;
+
+            
+
+            .service-box {
+                background-color: #ffffff;
+                height: 300px;
+                width: 270px;
+                padding-left: 20px;
+                margin-bottom: 40px;
+                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+                text-decoration: none;
+
+                .line {
+                    border: 1px solid #191919;
+                    width: 35px;
+                    margin-top: 40px;
+                    margin-bottom: 30px;
+                }
+
+                .arrow-ring {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    border-radius: 50%;
+                    background-color: #191919;
+                    color: #ffffff;
+                    height: 50px;
+                    width: 50px;
+                    left: 170px;
+                    top: 30px;
+                    font-size: 20px;
+                    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: #191919;
+                        border-color: #191919;
+                        color: #F9D783;
+                
+                    }
+                }
+                
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #191919;
+                }
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    color: #707070;
+                }
+
+                &:hover {
+                    background-color: #F9D783;
+
+
+                    .arrow-ring {
+                        background-color: #ffffff;
+                        color: #191919;
+
+                    }
+            
+                }
+
+            }
+        } 
+    }
+}

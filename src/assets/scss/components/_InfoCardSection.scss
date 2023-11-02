@@ -1,0 +1,81 @@
+.info-card-section {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    .container {
+
+        .contact-row {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media (min-width: 1200px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                padding-top: 25px;
+                border-color: #dad9d3ff;
+                align-items: center;
+                text-align: center;
+
+                @media (min-width: 1200px) {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 25px;
+                    padding-bottom: 30px;
+                    padding-left: 40px;
+                    padding-right: 100px;
+                    border-color: #dad9d3ff;
+                    align-items: start;
+                    text-align: start;
+                }
+
+                @media (min-width: 1400px) {
+                    display: flex;
+                    flex-direction: row;
+                    padding-top: 25px;
+                    padding-bottom: 30px;
+                    padding-left: 40px;
+                    padding-right: 100px;
+                    border-color: #dad9d3ff;
+                }
+
+                h3 {
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 0.6em;
+
+                    @media (min-width: 1400px) {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 0.6em;
+                    }
+                }
+
+                .image {
+                    margin-right: 20px;
+                }
+
+                .connect-box{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
