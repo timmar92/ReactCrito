@@ -1,0 +1,102 @@
+.message-section {
+
+    .container {
+        background-color: #F0EFE9;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 80px;
+
+        .info {
+
+
+            h2 {
+                color: #191919;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 35px;
+                text-align: center;
+                margin-left: 20%;
+                margin-right: 20%;
+                padding-top: 90px;
+
+                @media (min-width: 1200px) {
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 45px;
+                    text-align: center;
+                    margin-left: 33%;
+                    margin-right: 33%;
+                    padding-top: 90px;
+                }
+            }
+        }
+        
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            
+            .name {
+                margin-left: 15%;
+                margin-right: 15%;
+
+                .form-input {
+                    display: block;
+                    width: 100%;
+                    color: #191919;
+                    border: none;
+                    border-radius: 25px;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+                    padding-left: 30px;
+                    
+                }
+            }
+
+            .email {
+                margin-left: 15%;
+                margin-right: 15%;
+
+                .form-input {
+                    display: block;
+                    width: 100%;
+                    color: #191919;
+                    border: none;
+                    border-radius: 25px;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+                    padding-left: 30px;
+
+                    
+                }
+            }
+
+            .message {
+                margin-left: 15%;
+                margin-right: 15%;
+                padding-bottom: 30px;
+
+                .form-input {
+                    display: block;
+                    width: 100%;
+                    color: #191919;
+                    border: none;
+                    resize: none;
+                    height: 150px;
+                    border-radius: 25px;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+                    padding-left: 30px;
+
+                }
+            }
+
+            .btn-yellow {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+    }
+}

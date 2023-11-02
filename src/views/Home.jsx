@@ -12,25 +12,27 @@ import MeetOurTeamSection from '../components/MeetOurTeamSection';
 import ReviewSection from '../components/ReviewSection';
 import ArticlesSection from '../components/ArticlesSection';
 import NewsLetterSection from '../components/NewsLetterSection';
+import ScrollToTopButton from '../components/generics/ScrollToTopButton';
 
 const Home = () => {
   return (
     <>
-        <Header />
+      <Header />
         <main>
-            <ShowcaseSection />
-            <CompanyAdsSection />
-            <FeaturesSection />
-            <AboutCompanySection />
-            <ServiceSection />
-            <ChooseUsSection />
-            <ProjectCaseSection />
-            <MeetOurTeamSection />
-            <ReviewSection />
-            <ArticlesSection />
-            <NewsLetterSection />
+          <ScrollToTopButton />
+          <ShowcaseSection />
+          <CompanyAdsSection />
+          <FeaturesSection />
+          <AboutCompanySection />
+          <ServiceSection />
+          <ChooseUsSection />
+          <ProjectCaseSection />
+          <MeetOurTeamSection />
+          <ReviewSection />
+          <ArticlesSection />
+          <NewsLetterSection />
         </main>
-        <Footer />
+      <Footer />
     </>
   )
 }
