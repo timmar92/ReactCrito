@@ -1,32 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PageTitle from '../components/PageTitle';
 import ArticlesSection from '../components/ArticlesSection';
 import Tag from '../components/generics/Tag';
-import ScrollToTopButton from '../components/generics/ScrollToTopButton';
 import SearchBox from '../components/SearchBox';
+import { ArticleContext } from '../contexts/ArticleContext';
+
 
 
 const NewsDetails = () => {
     const { id } = useParams();
-    const [article, setArticle] = useState(null);
+    const articles = useContext(ArticleContext);
+    const article = articles.find(article => article.id === id);
 
     useEffect(() => {
-        const fetchArticle = async () => {
-            const response = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`);
-            
-            if (response.status !== 200) {
-                setError(`Error: ${response.status}`);
-                return;
-            }
-    
-            const data = await response.json();
-            setArticle(data);
-        };
-    
-        fetchArticle();
+        window.scrollTo(0, 0);
     }, [id]);
 
   return (
@@ -34,7 +24,6 @@ const NewsDetails = () => {
     <>
         <Header />
         <main>
-            <ScrollToTopButton />
             <PageTitle place='Home' strong='News' title='Articles & News' />
             {article && (
                 <section className='expanded-article'>

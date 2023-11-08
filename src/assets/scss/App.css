@@ -1612,6 +1612,14 @@ header .container .menu .btn-login {
   display: flex;
 }
 
+.error {
+  font-family: "DM Sans", sans-serif;
+  margin-left: 23px;
+  margin-bottom: 7px;
+  color: rgb(213, 23, 23);
+  font-weight: 700;
+}
+
 .message-section .container {
   background-color: #F0EFE9;
   display: flex;
@@ -1644,6 +1652,11 @@ header .container .menu .btn-login {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.message-section .container .form label {
+  font-family: "DM Sans", sans-serif;
+  margin-left: 23px;
+  margin-bottom: 7px;
 }
 .message-section .container .form .name {
   margin-left: 15%;
@@ -1693,6 +1706,13 @@ header .container .menu .btn-login {
 .message-section .container .form .btn-yellow {
   margin-left: 15%;
   margin-right: 15%;
+}
+.message-section .container .form .error-message {
+  text-align: center;
+  color: rgb(213, 23, 23);
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
 
 .map-section iframe {

@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import AllArticlesSection from '../components/AllArticlesSection';
 import PageTitle from '../components/PageTitle';
 import NewsLetterSection from '../components/NewsLetterSection';
-import ScrollToTopButton from '../components/generics/ScrollToTopButton';
+
 
 
 const News = () => {
@@ -12,7 +12,6 @@ const News = () => {
     <>
       <Header />
         <main>
-          <ScrollToTopButton />
           <PageTitle place='Home' strong='News' title='Articles & News' />
           <AllArticlesSection />
           <NewsLetterSection />

@@ -1,3 +1,11 @@
+.error {
+    font-family: 'DM Sans', sans-serif;
+    margin-left: 23px;
+    margin-bottom: 7px;
+    color: rgb(213, 23, 23);
+    font-weight: 700;
+}
+
 .message-section {
 
     .container {
@@ -36,6 +44,13 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+
+            label {
+                font-family: 'DM Sans', sans-serif;
+                margin-left: 23px;
+                margin-bottom: 7px;
+
+            }
 
             
             .name {
@@ -96,6 +111,14 @@
             .btn-yellow {
                 margin-left: 15%;
                 margin-right: 15%;
+            }
+
+            .error-message {
+                text-align: center;
+                color: rgb(213, 23, 23);
+                font-size: 20px;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
             }
         }
     }

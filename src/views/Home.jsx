@@ -12,14 +12,13 @@ import MeetOurTeamSection from '../components/MeetOurTeamSection';
 import ReviewSection from '../components/ReviewSection';
 import ArticlesSection from '../components/ArticlesSection';
 import NewsLetterSection from '../components/NewsLetterSection';
-import ScrollToTopButton from '../components/generics/ScrollToTopButton';
+
 
 const Home = () => {
   return (
     <>
       <Header />
         <main>
-          <ScrollToTopButton />
           <ShowcaseSection />
           <CompanyAdsSection />
           <FeaturesSection />
