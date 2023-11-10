@@ -1237,15 +1237,26 @@ header .container .menu .btn-login {
 }
 .articles-section .container .article-row .article .picture .date {
   background-color: #F9D783;
-  width: 120px;
+  width: 80px;
   height: 80px;
   text-align: center;
   display: flex;
   align-items: center;
-  border-radius: 20px;
   position: absolute;
   top: 50px;
   left: 20px;
+}
+.articles-section .container .article-row .article .picture .date .day {
+  color: #191919;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+.articles-section .container .article-row .article .picture .date .month {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 @media (min-width: 576px) {
   .articles-section .container .article-row .article .picture .date {
@@ -1263,9 +1274,11 @@ header .container .menu .btn-login {
 }
 @media (min-width: 1200px) {
   .articles-section .container .article-row .article .picture .date {
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     z-index: 1;
-    top: 15px;
+    top: 5px;
     left: 15px;
     margin-bottom: -40px;
   }
@@ -1427,15 +1440,26 @@ header .container .menu .btn-login {
 }
 .all-articles-section .container .article .picture .date {
   background-color: #F9D783;
-  width: 120px;
+  width: 80px;
   height: 80px;
   text-align: center;
   display: flex;
   align-items: center;
-  border-radius: 20px;
   position: absolute;
   top: 50px;
   left: 20px;
+}
+.all-articles-section .container .article .picture .date .day {
+  color: #191919;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+.all-articles-section .container .article .picture .date .month {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 @media (min-width: 576px) {
   .all-articles-section .container .article .picture .date {
@@ -1453,9 +1477,11 @@ header .container .menu .btn-login {
 }
 @media (min-width: 1200px) {
   .all-articles-section .container .article .picture .date {
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     z-index: 1;
-    top: 15px;
+    top: 5px;
     left: 15px;
     margin-bottom: -40px;
   }

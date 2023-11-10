@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Article from './generics/Article';
 import SectionTitle from './generics/SectionTitle';
-import { ArticleContext } from '../contexts/ArticleContext';
+
 
 const AllArticlesSection = () => {
 
