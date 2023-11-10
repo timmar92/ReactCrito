@@ -9,7 +9,7 @@ const Footer = () => {
             <section className="link-section">
                 <div className="container">
                     <div className="logotype">
-                        <Link to="index.html">
+                        <Link to="/">
                             <img src={img_whiteLogo} alt="crito logotype" />
                         </Link>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>

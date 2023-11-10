@@ -1163,6 +1163,39 @@ header .container .menu .btn-login {
   margin-top: 60px;
 }
 
+.articles-section .container .scrollers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.articles-section .container .scrollers .left {
+  border: none;
+  background-color: #3f3f3f;
+  color: #FFFFFF;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.articles-section .container .scrollers .left:hover {
+  background-color: #F9D783;
+  color: #191919;
+}
+.articles-section .container .scrollers .right {
+  border: none;
+  background-color: #3f3f3f;
+  color: #FFFFFF;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.articles-section .container .scrollers .right:hover {
+  background-color: #F9D783;
+  color: #191919;
+}
 .articles-section .container .header {
   display: grid;
   text-align: center;
@@ -1198,7 +1231,7 @@ header .container .menu .btn-login {
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: auto;
+  overflow: hidden;
 }
 @media (min-width: 1200px) {
   .articles-section .container .article-row {
@@ -1216,6 +1249,9 @@ header .container .menu .btn-login {
   transition: opacity 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, text-decoration 0.3s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
   margin-left: 25px;
+}
+.articles-section .container .article-row .article:last-child {
+  margin-right: 23px;
 }
 .articles-section .container .article-row .article .picture {
   position: relative;
@@ -1874,6 +1910,7 @@ header .container .menu .btn-login {
 .different-background-color {
   background-color: #F0EFE9;
   margin-top: 80px;
+  padding-bottom: 40px;
 }
 
 .searchbox .input-area {
