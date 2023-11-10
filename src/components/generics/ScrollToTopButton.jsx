@@ -4,7 +4,7 @@ const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     const checkVisibility = () => {
-        if (window.pageYOffset > 300) {
+        if (window.scrollY > 300) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
