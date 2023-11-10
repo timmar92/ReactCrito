@@ -10,4 +10,12 @@
     height: 70px;
     border-radius: 35px;
     background-color: #424242;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &.visible {
+        opacity: 1;
+    }
+
+
 }

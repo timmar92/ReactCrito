@@ -1797,6 +1797,11 @@ header .container .menu .btn-login {
   height: 70px;
   border-radius: 35px;
   background-color: #424242;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.scroll-to-top.visible {
+  opacity: 1;
 }
 
 .tag {

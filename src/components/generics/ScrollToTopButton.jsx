@@ -3,18 +3,17 @@ import React, { useState, useEffect } from 'react';
 const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
 
+    const checkVisibility = () => {
+        if (window.pageYOffset > 300) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
+
     useEffect(() => {
-        const toggleVisibility = () => {
-            if (window.scrollY > 300) {
-                setIsVisible(true);
-            } else {
-                setIsVisible(false);
-            }
-        };
-
-        window.addEventListener('scroll', toggleVisibility);
-
-        return () => window.removeEventListener('scroll', toggleVisibility);
+        window.addEventListener('scroll', checkVisibility);
+        return () => window.removeEventListener('scroll', checkVisibility);
     }, []);
 
     const scrollToTop = () => {
@@ -24,10 +23,12 @@ const ScrollToTopButton = () => {
         });
     };
 
-  return (
-    isVisible && 
-    <button className='scroll-to-top' onClick={scrollToTop}><i className="fa-solid fa-arrow-up"></i></button>
-  )
-}
+    return (
+        <button className={`scroll-to-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
+            <i className="fa-solid fa-arrow-up"></i>
+        </button>
+    );
+};
 
-export default ScrollToTopButton
+export default ScrollToTopButton;
+
