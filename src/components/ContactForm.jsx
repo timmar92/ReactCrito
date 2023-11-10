@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { json } from 'react-router-dom';
+
 
 
 
@@ -16,7 +16,7 @@ const ContactForm = () => {
         validationSchema: Yup.object({
             name: Yup.string()
                 .required('Name is required')
-                .min(2, 'Name must be at least 3 characters'),
+                .min(2, 'Name must be at least 2 characters'),
             email: Yup.string()
                 .email('Email is invalid')
                 .required('Email is required')
@@ -42,14 +42,13 @@ const ContactForm = () => {
                 },
                 body: JSON.stringify(values)
             });
-
-            if (response.status !== 200) {
-                alert(`Error: ${response.status}`);
-                return;
+        
+            if (response.status === 200) {
+                alert('Message sent!');
+                form.resetForm();
+            } else {
+                alert('Failed to send the message');
             }
-
-            alert('Message sent!');
-            form.resetForm();
         }
     });
 
