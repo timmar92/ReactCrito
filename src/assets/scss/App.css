@@ -1198,6 +1198,7 @@ header .container .menu .btn-login {
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: auto;
 }
 @media (min-width: 1200px) {
   .articles-section .container .article-row {
@@ -1214,6 +1215,7 @@ header .container .menu .btn-login {
   transition: opacity 0.3s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out, text-decoration 0.3s ease-in-out, -webkit-text-decoration 0.3s ease-in-out;
+  margin-left: 25px;
 }
 .articles-section .container .article-row .article .picture {
   position: relative;

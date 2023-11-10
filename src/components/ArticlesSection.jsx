@@ -16,9 +16,8 @@ const ArticlesSection = () => {
                     <Button to='/news' type='transparent' title='Browse Articles' />
                 </div>
                 <div className="article-row">  
-                    <Article limit={3} /> 
+                    <Article /> 
                 </div>
-
             </div>
         </section>
     );

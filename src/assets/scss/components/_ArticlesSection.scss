@@ -39,6 +39,8 @@
            align-items: center;
            justify-content: center;
            text-align: center;
+           overflow: auto;
+
 
 
             @media (min-width: 1200px) {
@@ -54,7 +56,8 @@
                 width: 400px;
                 text-decoration-color: #FFFFFF;
                 transition: opacity 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
-
+                margin-left: 25px;
+                
                 
 
                 .picture{
@@ -87,7 +90,7 @@
                         position: absolute;
                         top: 50px;
                         left: 20px;
-                        
+
 
                         .day {
                             color: #191919;
